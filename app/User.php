@@ -110,6 +110,7 @@ class User extends Authenticatable
 
     public function unfavorite($micropostId)
     {
+        
         // 既にフォローしているかの確認
         $exist = $this->is_favorite($micropostId);
 
